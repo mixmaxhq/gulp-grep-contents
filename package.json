@@ -1,0 +1,30 @@
+{
+  "name": "gulp-grep-contents",
+  "version": "0.0.1",
+  "description": "Filter a gulp stream by file contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mixmaxhq/gulp-grep-contents.git"
+  },
+  "keywords": [
+    "gulp",
+    "grep",
+    "filter",
+    "contents",
+    "regex"
+  ],
+  "author": "Brad Vogel <brad@mixmax.com> (https://mixmax.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixmaxhq/gulp-grep-contents/issues"
+  },
+  "homepage": "https://github.com/mixmaxhq/gulp-grep-contents",
+  "dependencies": {
+    "gulp-util": "^3.0.3",
+    "through2": "^0.6.3"
+  }
+}
