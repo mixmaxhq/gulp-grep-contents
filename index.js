@@ -1,4 +1,4 @@
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
 var through = require('through2');
 
 var grep = function(regex, options) {
@@ -8,7 +8,7 @@ var grep = function(regex, options) {
 
   return through.obj(function(file, encoding, callback) {
     if (file.isStream()) {
-      throw new gutil.PluginError('Stream not supported');
+      throw new PluginError('Stream not supported');
     }
 
     var match = regex.test(String(file.contents))
